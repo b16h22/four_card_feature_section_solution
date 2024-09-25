@@ -1,0 +1,180 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: hsl(0, 0%, 98%);
+      font-family: Poppins;
+    }
+
+    .subtitle {
+      font-weight: 200;
+      font-size: 2.2em;
+      color: hsl(234, 12%, 34%);
+      margin-bottom: 0;
+    }
+
+    .title {
+      font-weight: 600;
+      font-size: 2.2em;
+      color: hsl(234, 12%, 34%);
+      margin-top: 0;
+    }
+
+    .description {
+      font-size: 1em;
+    }
+
+    h3 {
+      font-weight: 600;
+      color: hsl(234, 12%, 34%);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    p {
+      font-size: 0.8em;
+      font-weight: 400;
+      color: hsl(229, 6%, 66%);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-height: 100%;
+      padding: 1em 0;
+    }
+
+    .header {
+      max-height: 100%;
+      max-width: 40%;
+      text-align: center;
+      margin-top: 2em;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 21em 21em 21em;
+      grid-template-rows: auto auto auto auto;
+      gap: 2em;
+      padding: 2em;
+      max-height: 100%;
+      max-width: 71em;
+    }
+
+    .card1, .card2, .card3, .card4 {
+      width: 100%;
+      background-color: white;
+      border-radius: 8px;
+      padding-bottom: 2em;
+      box-shadow: 0 8px 20px 0 hsla(229, 6%, 66%, 0.4);
+    }
+
+    .card1 {
+      grid-row: 2 / span 2;
+    }
+
+    .card2 {
+      grid-row: 1 / span 2;
+    }
+
+    .card3 {
+      grid-row: 3 / span 2;
+    }
+
+    .card4 {
+      grid-row: 2 / span 2;
+    }
+
+    .card_content {
+      padding: 2em;
+    }
+
+    .icon {
+      float: right;
+      margin-top: 1em;
+    }
+
+    .card1, .card2, .card3, .card4::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    .line1, .line2, .line3, .line4 {
+      height: 6px;
+      width: 100%;
+      border: none;
+      margin: 0;
+      border-radius: 16px 16px 0 0;
+    }
+
+    .line1 {
+      background: hsl(180, 62%, 55%);
+    }
+
+    .line2 {
+      background: hsl(0, 78%, 62%);
+    }
+
+    .line3 {
+      background: hsl(34, 97%, 64%);
+    }
+
+    .line4 {
+      background: hsl(212, 86%, 64%);
+    }
+
+    @media screen and (max-width:768px) {
+
+      .content {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        padding: 2.5em;
+        max-width: 100%;
+      }
+
+      .card1 {
+        grid-row: 1;
+      }
+  
+      .card2 {
+        grid-row: 2;
+      }
+  
+      .card3 {
+        grid-row: 3;
+      }
+  
+      .card4 {
+        grid-row: 4;
+      }
+
+      .header {
+        max-width: 100%;
+        margin: 5em 2.5em 2.5em 2.5em;
+      }
+
+      .subtitle, .title {
+        font-size: 2em;
+      }
+
+      .description {
+        font-size: 1.2em;
+      }
+
+      h3 {
+        font-size: 1.7em;
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      .icon {
+        height: 5em;
+        width: 5em;
+      }
+      
+    }
